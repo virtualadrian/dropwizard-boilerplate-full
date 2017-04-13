@@ -1,0 +1,8 @@
+com/franzwong/app/dropwizard/data/TaskRepository.class
+com/franzwong/app/dropwizard/MainApplication$1.class
+com/franzwong/app/dropwizard/MainConfiguration.class
+com/franzwong/app/dropwizard/model/Task.class
+com/franzwong/app/dropwizard/resource/TaskResource.class
+com/franzwong/app/dropwizard/health/Ping.class
+com/franzwong/app/dropwizard/MainApplication.class
+com/franzwong/app/dropwizard/data/Task.class

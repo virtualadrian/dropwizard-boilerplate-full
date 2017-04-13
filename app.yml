@@ -1,0 +1,25 @@
+logging:
+  level: INFO
+
+  loggers:
+    com.franzwong: DEBUG
+
+  appenders:
+    - type: file
+      logFormat: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n"
+      currentLogFilename: logs/app.log
+      threshold: ALL
+      archive: true
+      archivedLogFilenamePattern: logs/%d{yyyy-MM-dd}/app-%d{yyyy-MM-dd}.log
+      archivedFileCount: 50
+      timeZone: UTC
+
+server:
+  minThreads: 10
+  maxThreads: 50
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
